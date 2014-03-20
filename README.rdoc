@@ -1,28 +1,12 @@
 == README
+CHAPTRACK (should it be chaptrak??) helps you when you've lost your chapstick. Imagine that over the course of a long, Bostonian winter you spent $100 on chaptstick, and suddenly this site is especially relevant!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Purpose of the site:
+1) a place where people can complain about their lost chapstick, over and over again
+2) a place where people can post where they last saw their chapstick
+3) users can post if they find a misplaced chapstick
+4) people can connect and talk about the best chapsticks
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+FEATURES:
++ The ability to add a new brand/type of lip-aid
++ The ability to favourite your preferred lip-aid
