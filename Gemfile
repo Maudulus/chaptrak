@@ -6,6 +6,10 @@ gem 'rails', '4.0.3'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
+gem 'heroku'
+
+gem 'thread_safe', '0.2.0'
+
 gem 'devise'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
