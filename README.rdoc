@@ -1,5 +1,6 @@
 == README
-CHAPTRACK (should it be chaptrak??) helps you when you've lost your chapstick. Imagine that over the course of a long, Bostonian winter you spent $100 on chaptstick, and suddenly this site is especially relevant!
+
+CHAPTRAK helps you when you've lost your chapstick. Imagine that over the course of a long, Bostonian winter you spent $100 on chaptstick, and suddenly this site is especially relevant!
 
 Purpose of the site:
 1) a place where people can complain about their lost chapstick, over and over again
