@@ -11,3 +11,20 @@
  *= require_self
  *= require_tree .
  */
+body {background-image:url("chaptrak_img.jpg");}
+
+#user_nav {
+  color: white
+}
+
+#home_chap {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+div{
+  color: white;
+}
