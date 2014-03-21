@@ -11,3 +11,17 @@ Purpose of the site:
 FEATURES:
 + The ability to add a new brand/type of lip-aid
 + The ability to favourite your preferred lip-aid
++maps - pinpoints with images and comments
++ Users can only add the images/pinpoints
++ chapstick links bar
++all brands - review section with company, price, ingredients
++have a facebook/twitter link/logo thing/api
++twitterfeed style comments
+  -perhaps these can be sent in from mobile phone (only if the number corresponds to a user's phone number)
++dating/quizzes - matched based on favourite chapsticks
+
+
+Fun Words:
++minichaps
++minichapman
+
