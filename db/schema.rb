@@ -37,7 +37,6 @@ ActiveRecord::Schema.define(version: 20140322193646) do
     t.text     "body",       null: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.binary   "picture"
   end
 
   create_table "users", force: true do |t|
