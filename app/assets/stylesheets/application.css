@@ -1,3 +1,5 @@
+
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -9,9 +11,16 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require foundation_and_overrides
+
  *= require_tree .
+
  */
-#homebackground {background-image:url("chaptrak_img.jpg");}
+
+/* #homebackground {background-image:url("chaptrak_img.jpg");}*/
+
+/*body {background-image:url("chaptrak_img.jpg");}
+>>>>>>> 1262970ce2eeb95c3a8de0e381de61810fbb289e
 
 #user_nav {
   color: black
@@ -29,7 +38,19 @@ div{
   color: black;
 }
 
-#home_ul li
-{
-  display:inline;
+
+
+#map-canvas {
+  height:200px;
+  width:400px;
+  margin: 0;
+  padding: 0px
 }
+
+#map-canvas {
+  height:400px;
+  width:400px;
+  margin:0;
+  padding
+}
+*/
