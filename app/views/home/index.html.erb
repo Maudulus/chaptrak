@@ -71,6 +71,9 @@ function initialize() {
   }
 }
 
+
+
+
 function handleNoGeolocation(errorFlag) {
   if (errorFlag) {
     var content = 'Error: The Geolocation service failed.';
@@ -93,5 +96,5 @@ google.maps.event.addDomListener(window, 'load', initialize);
     </script>
   </head>
   <body>
-    <div id="map-canvas"></div>
+    <div id="map-canvas" style="width:300px; height:100px;"></div>
   </body>

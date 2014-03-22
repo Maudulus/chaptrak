@@ -34,9 +34,12 @@ div{
   display:inline;
 }
 
-#map-canvas {
-  height:400px;
-  width:400px;
-  margin:0;
-  padding
-}
+
+  #map-canvas {
+    height:200px;
+    width:400px;
+    margin: 0;
+    padding: 0px
+  }
+
+
