@@ -9,9 +9,15 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require foundation_and_overrides
+
  *= require_tree .
  */
-#homebackground {background-image:url("chaptrak_img.jpg");}
+
+/* #homebackground {background-image:url("chaptrak_img.jpg");}*/
+
+/*body {background-image:url("chaptrak_img.jpg");}
+>>>>>>> 1262970ce2eeb95c3a8de0e381de61810fbb289e
 
 #user_nav {
   color: black
@@ -40,3 +46,4 @@ div{
   margin:0;
   padding
 }
+*/
