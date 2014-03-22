@@ -1,9 +1,16 @@
 Chaptrak::Application.routes.draw do
   resources :locations
+  resources :abouts, as: 'about'
+  resources :chaprooms, as: 'chaproom'
+  resources :reviews
+  resources :chaps
+  resources :dashboards, as: 'dashboard'
 
   devise_for :users
 
   root to: "home#index"
+
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
