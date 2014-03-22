@@ -1,4 +1,5 @@
 <h1 id="home_chap">Welcome to ChapTrak</h1>
+
 <ul id="home_ul">
   <li ><a href="/locations" >LOCATIONS</a></li>
     <% if user_signed_in? %>
@@ -98,3 +99,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
   <body>
     <div id="map-canvas" style="width:300px; height:100px;"></div>
   </body>
+
+<%= link_to 'New Post', new_post_path %>
+
