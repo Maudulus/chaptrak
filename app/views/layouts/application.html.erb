@@ -11,7 +11,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY3appHAkQeRQJVGwOi1p80XybQQc-BC0&sensor=true"></script>
 
 </head>
-    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Chaptrak" %></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
@@ -20,6 +20,14 @@
 
   <body>
     <div class="row">
+    <% if !user_signed_in? %>
+      <%= link_to 'Sign In', new_user_session_path %> |
+      <%= link_to 'Sign Up', new_user_registration_path %>
+      <% end %>
+    <% if user_signed_in? %>
+      <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
+    <% end %>
+
     <%= yield %>
     <%= javascript_include_tag "application" %>
     </div>
