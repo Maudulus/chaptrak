@@ -11,20 +11,25 @@
  *= require_self
  *= require_tree .
  */
-body {background-image:url("chaptrak_img.jpg");}
+#homebackground {background-image:url("chaptrak_img.jpg");}
 
 #user_nav {
-  color: white
+  color: black
 }
 
 #home_chap {
-  color: white;
+  color: black;
 }
 
 h2 {
-  color: white;
+  color: black;
 }
 
 div{
-  color: white;
+  color: black;
+}
+
+#home_ul li
+{
+  display:inline;
 }

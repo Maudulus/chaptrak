@@ -1,1 +1,20 @@
 <h1 id="home_chap">Welcome to ChapTrak</h1>
+<ul id="home_ul">
+  <li ><a href="/locations" >LOCATIONS</a></li>
+    <% if user_signed_in? %>
+
+  <ul>
+    <li ><a href="/locations/new" >Add Location</a></li>
+  </ul>
+  <% end %>
+  <li><a href="/chaproom">CHAPROOM</a></li>
+  <li><a href="/reviews">LIPSERVICE-REVIEWS</a></li>
+  <li><a href="/chaps">CHAPS</a></li>
+  <li><a href="/about">ABOUT CHAPTRAK</a></li>
+  <% if user_signed_in? %>
+  <li><a href="/dashboard">Dashboard</a></li>
+  <% end %>
+</ul>
+
+    <div id="map-canvas" class="map"></div>
+

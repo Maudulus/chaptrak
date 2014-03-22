@@ -1,15 +1,15 @@
 class LocationsController < ApplicationController
   before_action :set_location, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!, only: [:new, :create, :edit, :destroy]
   # GET /locations
   # GET /locations.json
   def index
-  if params[:search].present?
-    @locations = Location.near(params[:search], 50, :order => :distance)
-  else
-    @locations = Location.all
+    if params[:search].present?
+      @locations = Location.near(params[:search], 50)
+    else
+      @locations = Location.all
+    end
   end
-end
 
   # GET /locations/1
   # GET /locations/1.json
