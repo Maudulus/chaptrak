@@ -1,40 +1,7 @@
-<h1 id="home_chap">Welcome to ChapTrak</h1>
-
-<ul id="home_ul">
-  <li ><a href="/locations" >LOCATIONS</a></li>
-    <% if user_signed_in? %>
-
-  <ul>
-    <li ><a href="/locations/new" >Add Location</a></li>
-  </ul>
-  <% end %>
-  <li><a href="/chaproom">CHAPROOM</a></li>
-  <li><a href="/reviews">LIPSERVICE-REVIEWS</a></li>
-  <li><a href="/chaps">CHAPS</a></li>
-  <li><a href="/about">ABOUT CHAPTRAK</a></li>
-  <% if user_signed_in? %>
-  <li><a href="/dashboard">Dashboard</a></li>
-  <% end %>
-</ul>
-
-    <div id="map-canvas" class="map"></div>
- <head>
+<head>
     <title>Geolocation</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <style>
-      html, body, #map-canvas {
-        height: 100%;
-        margin: 0px;
-        padding: 0px
-      }
-    </style>
-    <!--
-    Include the maps javascript with sensor=true because this code is using a
-    sensor (a GPS locator) to determine the user's location.
-    See: https://developers.google.com/maps/documentation/javascript/tutorial#Loading_the_Maps_API
-    -->
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
 
     <script>
 // Note: This example requires that you consent to location sharing when
@@ -72,9 +39,6 @@ function initialize() {
   }
 }
 
-
-
-
 function handleNoGeolocation(errorFlag) {
   if (errorFlag) {
     var content = 'Error: The Geolocation service failed.';
@@ -95,10 +59,63 @@ function handleNoGeolocation(errorFlag) {
 google.maps.event.addDomListener(window, 'load', initialize);
 
     </script>
-  </head>
-  <body>
-    <div id="map-canvas" style="width:300px; height:100px;"></div>
-  </body>
 
-<%= link_to 'New Post', new_post_path %>
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+
+
+    <title>Geolocation</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+
+</head>
+
+  <body>
+
+    <h1 id="home_chap">Welcome to ChapTrak</h1>
+
+<ul id="home_ul">
+  <li ><a href="/locations" >LOCATIONS</a></li>
+    <% if user_signed_in? %>
+
+
+    <li ><a href="/locations/new" >Add Location</a></li>
+
+  <% end %>
+  <li><a href="/chaproom">CHAPROOM</a></li>
+  <li><a href="/reviews">LIPSERVICE-REVIEWS</a></li>
+  <li><a href="/chaps">CHAPS</a></li>
+  <li><a href="/about">ABOUT CHAPTRAK</a></li>
+  <% if user_signed_in? %>
+  <li><a href="/dashboard">Dashboard</a></li>
+  <% end %>
+  <li><a href="/posts/new">New Post</a></li>
+  <li><a href="/">HOME</a></li>
+
+
+
+</ul>
+
+    <div id="map-canvas" class="map"></div>
+
+
+
+</body>
 

@@ -1,3 +1,5 @@
+
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -12,6 +14,7 @@
  *= require foundation_and_overrides
 
  *= require_tree .
+
  */
 
 /* #homebackground {background-image:url("chaptrak_img.jpg");}*/
@@ -35,10 +38,7 @@ div{
   color: black;
 }
 
-#home_ul li
-{
-  display:inline;
-}
+
 
 #map-canvas {
   height:200px;
