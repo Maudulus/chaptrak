@@ -1,9 +1,8 @@
 <%= simple_form_for @post do |f| %>
   <%= f.input :title%>
-  <%= f.input :author%>
+  <%= f.hidden_field :author, value: current_user.id, readonly: true%>
   <%= f.input :body%>
 
-  <%= f.submit %>
-
+  <%= f.button :submit, class: 'button' %>
 
 <% end %>

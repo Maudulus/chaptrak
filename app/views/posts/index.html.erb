@@ -1,19 +1,8 @@
-<%= simple_form_for @post, url: url_for(action: 'create', controller: 'posts', method: 'post') do |f| %>
-  <%= f.input :title%>
-  <%= f.input :author%>
-  <%= f.input :body%>
-  <p>
-  <%= f.label :title%><br />
-  <%= f.text_field :title%>
-  </p>
-  <p>
-  <%= f.label :author%><br />
-  <%= f.text_field :author%>
-  </p>
-  <p>
-  <%= f.label :body%><br />
-  <%= f.text_field :body%>
-  </p>
-
-
+<h1> All Posts </h1>
+<%@posts.each do |post|%>
+<%= link_to post.title, "/posts/#{post.id}" %> <br />
 <% end %>
+<p></p>
+<p></p>
+<p></p>
+<%=link_to 'Make a New Post!', new_post_path%>
