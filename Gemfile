@@ -8,6 +8,8 @@ gem 'pg'
 
 gem 'heroku'
 
+gem 'geocoder'
+
 gem 'thread_safe', '0.2.0'
 
 gem 'devise'
