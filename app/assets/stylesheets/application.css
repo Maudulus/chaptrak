@@ -11,7 +11,7 @@
  *= require_self
  *= require_tree .
  */
-body {background-image:url("chaptrak_img.jpg");}
+/*body {background-image:url("chaptrak_img.jpg");}
 
 #user_nav {
   color: white
@@ -28,3 +28,4 @@ h2 {
 div{
   color: white;
 }
+*/
