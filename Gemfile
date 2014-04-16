@@ -45,6 +45,8 @@ gem 'quiet_assets'
 
 gem 'foundation-rails'
 
+gem 'rails_12factor'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
