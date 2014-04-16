@@ -3,19 +3,7 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
 </head>
-<body>
-  <h1 id="home_chap">Welcome to ChapTrak</h1>
-    <ul id="home_ul">
-        <li ><a href="/locations" >LOCATIONS</a></li>
-          <% if user_signed_in? %>
-            <li ><a href="/locations/new" >Add Location</a></li>
-          <% end %>
-        <li><a href="/about">ABOUT CHAPTRAK</a></li>
-          <% if user_signed_in? %>
-            <li><a href="/dashboard">DASHBOARD</a></li>
-          <% end %>
-        <li><a href="/posts/new">NEW POST</a></li>
-    </ul>
+  <body>
     <%= image_tag("chaptrak_img.jpg") %>
-</body>
+  </body>
 

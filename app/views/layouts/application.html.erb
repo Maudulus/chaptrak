@@ -8,33 +8,58 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY3appHAkQeRQJVGwOi1p80XybQQc-BC0&sensor=true"></script>
-
-</head>
+  </head>
     <title><%= content_for?(:title) ? yield(:title) : "Chaptrak" %></title>
-
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= csrf_meta_tags %>
   </head>
+    <body>
 
-  <body>
-    <div class="row">
-    <% if !user_signed_in? %>
-      <%= link_to 'Sign In', new_user_session_path %> |
-      <%= link_to 'Sign Up', new_user_registration_path %>
-      <% end %>
-    <% if user_signed_in? %>
-      <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
-    <% end %>
+      <div class="row">
+        <nav class="top-bar" data-topbar>
+          <ul class="title-area">
+            <li class="name">
+              <h1><a href="/">CHAPTRAK</a></h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+          </ul>
+          <section class="top-bar-section">
+            <ul class="right">
+              <% if user_signed_in? %>
+                <li><%= "Signed in as #{current_user.email}" %></li>
+                <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
+              <% else %>
+                <li><%= link_to 'Sign In', new_user_session_path %></li>
+                <li><%= link_to 'Sign Up', new_user_registration_path %></li>
+              <% end %>
+            </ul>
+            <ul class="left">
+              <li class="has-dropdown">
+                <a href="/locations">LOCATIONS</a>
+                <ul class="dropdown">
+                  <li><a href="/locations/new">New Location</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="left">
+              <li class="has-dropdown">
+                <a href="/posts">POSTS</a>
+                <ul class="dropdown">
+                  <li><a href="/posts/new">NEW POSTS</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="left">
+              <li class="">
+                <a href="/about">ABOUT</a>
+              </li>
+            </ul>
+          </section>
+        </nav>
 
-    <%= yield %>
-    <p></p>
-    <%= javascript_include_tag "application" %>
-    </div>
-    <br>
-     <%= link_to 'New Post', new_post_path %>
-     <br>
-      <%= link_to 'Home', root_path %>
-  </body>
+        <%= yield %>
+
+      </div>
+    </body>
 </html>
