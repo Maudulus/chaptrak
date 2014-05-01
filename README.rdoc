@@ -1,4 +1,6 @@
-== README
+README:
+
+http://chaptrak.heroku.com
 
 CHAPTRAK helps you when you've lost your chapstick. Imagine that over the course of a long, Bostonian winter you spent $100 on chaptstick, and suddenly this site is especially relevant!
 
